@@ -91,6 +91,51 @@
   }
 }
 
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 66% 48%;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+}
+
+.grid-box {
+  background-color: #444;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 0px;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-box:hover {
+  opacity:0.6 !important;
+  filter:alpha(opacity=60) !important; /* For IE8 and earlier */
+  box-shadow: 0 0 0px #000000 !important;
+}
+
+.grid-box .text {
+  opacity: 0;
+  margin : auto;
+  color: var(--bs-indigo);
+  background-color: #f8efeb;
+  }
+
+  
+
+.grid-box:hover .text {
+  opacity: 1;
+  transition: opacity 1s ease;
+   }
+
+.div-text {
+  position: absolute;
+  text-align: center;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
